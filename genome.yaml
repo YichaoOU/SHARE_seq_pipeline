@@ -1,0 +1,19 @@
+hybrid:
+    STAR: /home/yli11/dirs/pipelines/hg38_mm10
+    BWA: /home/yli11/dirs/pipelines/hg38_mm10/hg38_mm10.fa
+    gtf: /home/yli11/dirs/pipelines/hg38_mm10/hg_mm_gencode.annot.gtf
+    
+hg19:
+    STAR: /home/yli11/dirs/pipelines/hg19/hg19_star_253a_index
+    BWA: /home/yli11/Data/Human/hg19/bwa_16a_index/hg19.fa
+    
+    
+hg38: 
+    STAR: /home/yli11/dirs/pipelines/hg38/hg38_star_253a_index
+    BWA: /home/yli11/Data/Human/hg38/bwa_16a_index/hg38.fa
+    gtf: /home/yli11/dirs/pipelines/hg38_mm10/gencode.v38.annotation.gtf
+
+mm10:
+    STAR: /home/yli11/dirs/pipelines/mm10/mm10_star_253a_index
+    BWA: /home/yli11/Data/Mouse/mm10/bwa_16a_index/mm10.fa
+    gtf: /home/yli11/dirs/pipelines/hg38_mm10/gencode.vM27.annotation.gtf
