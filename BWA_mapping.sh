@@ -4,7 +4,8 @@ index_file=$1
 R1=$2
 R2=$3
 label=$4
-
+rseqc_bed=$5
+genome=$6
 
 COL3=$label
 
@@ -27,4 +28,15 @@ samtools index ${COL3}.filter.bam
 bedtools bamtobed -i ${COL3}.filter.bam | grep "/1" > ${COL3}.R1.bed
 
 
+# Read distribution
+
+module load conda3/202011
+
+source activate /home/yli11/.conda/envs/rseqc
+
+read_distribution.py -i ${COL3}.filter.bam -r $rseqc_bed > ${COL3}.read_distribution.tsv
+
+source activate /home/yli11/.conda/envs/r_env
+
+run_ATACseqQC.R ${COL3}.filter.bam $genome
 

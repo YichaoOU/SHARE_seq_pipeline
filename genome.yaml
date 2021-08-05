@@ -1,5 +1,5 @@
 hybrid:
-    STAR: /home/yli11/dirs/pipelines/hg38_mm10
+    STAR: /home/yli11/dirs/pipelines/hg38_mm10/SE50
     BWA: /home/yli11/dirs/pipelines/hg38_mm10/hg38_mm10.fa
     gtf: /home/yli11/dirs/pipelines/hg38_mm10/hg_mm_gencode.annot.gtf
     
@@ -9,11 +9,13 @@ hg19:
     
     
 hg38: 
-    STAR: /home/yli11/dirs/pipelines/hg38/hg38_star_253a_index
+    STAR: /home/yli11/dirs/pipelines/hg38/hg38_star_253a_index/SE50
     BWA: /home/yli11/Data/Human/hg38/bwa_16a_index/hg38.fa
     gtf: /home/yli11/dirs/pipelines/hg38_mm10/gencode.v38.annotation.gtf
+    rseqc_bed: /home/yli11/Data/RSEQC_bed/hg38_RefSeq.bed
 
 mm10:
     STAR: /home/yli11/dirs/pipelines/mm10/mm10_star_253a_index
     BWA: /home/yli11/Data/Mouse/mm10/bwa_16a_index/mm10.fa
     gtf: /home/yli11/dirs/pipelines/hg38_mm10/gencode.vM27.annotation.gtf
+    rseqc_bed: /home/yli11/Data/RSEQC_bed/mm10_RefSeq.bed
